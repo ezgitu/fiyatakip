@@ -1,40 +1,92 @@
-# Fiyat Takip Botu
+# 🚀 Crypto Price Alert Telegram Bot
 
-Telegram üzerinden Bitcoin fiyatını takip eden basit bir bot.
+## 📌 Overview
 
-## Özellikler
-- `/start` ile kullanım bilgisi gösterir
-- `/fiyat` ile güncel Bitcoin fiyatını getirir
-- `/setalarm` ile düzenli kontrol başlatır
-- `/stopalarm` ile alarmı kapatır
-- CoinGecko API kullanır
+This project is a **Telegram bot** that allows users to track real-time cryptocurrency prices and set custom alerts.
+It uses the **CoinGecko API** to fetch live market data and sends notifications directly via Telegram.
 
-## Kullanılan Teknolojiler
-- Python
-- python-telegram-bot
-- requests
+---
 
-## Kurulum
+## ⚡ Features
+
+* 📊 Real-time Bitcoin price tracking
+* 🔔 Custom price alerts (set your own target price)
+* 🤖 Telegram bot integration
+* ⏱️ Continuous monitoring system
+* 🧑‍💻 User-friendly commands
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python**
+* **Telegram Bot API**
+* **CoinGecko API**
+* **Requests / HTTP API**
+
+---
+
+## 🎮 Bot Commands
+
+| Command      | Description               |
+| ------------ | ------------------------- |
+| `/start`     | Start the bot             |
+| `/fiyat`     | Get current Bitcoin price |
+| `/setalarm`  | Set a price alert         |
+| `/stopalarm` | Stop alerts               |
+
+---
+
+## ⚙️ Installation
+
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
+git clone https://github.com/ezgitu/fiyatakip.git
+cd fiyatakip
 pip install -r requirements.txt
 ```
 
-## Ortam değişkeni
-`.env.example` dosyasını örnek alarak token bilgisini ortam değişkeni olarak tanımlayın.
+---
 
-Windows PowerShell için geçici kullanım:
-```powershell
-$env:TELEGRAM_BOT_TOKEN="BURAYA_TOKEN"
+## 🔐 Environment Variables
+
+Create a `.env` file and add your Telegram bot token:
+
+```env
+BOT_TOKEN=your_telegram_bot_token_here
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
 python bot.py
 ```
 
-## Komutlar
-- `/start`
-- `/fiyat`
-- `/setalarm`
-- `/stopalarm`
+---
 
-## Not
-Gerçek bot tokenını kodun içine yazmayın. GitHub'a yüklemeden önce BotFather üzerinden tokenı yenileyin.
+## 📈 Future Improvements
+
+* Support for multiple cryptocurrencies
+* Web dashboard for tracking
+* Advanced analytics & price prediction
+* Mobile notifications integration
+
+---
+
+## 💡 Project Purpose
+
+This project was developed to practice:
+
+* API integration
+* Automation systems
+* Real-time data processing
+* Backend development
+
+---
+
+## 👩‍💻 Author
+
+Ezgi
+
+---
